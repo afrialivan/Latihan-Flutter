@@ -28,6 +28,26 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextField(
+                decoration: InputDecoration(
+                  fillColor: Colors.lightBlue[50],
+                  filled: true,
+                  icon: Icon(Icons.adb),
+                  suffix: Container(
+                    width: 10,
+                    height: 10,
+                    color: Colors.red,
+                  ),
+                  prefixIcon: Icon(Icons.person),
+                  prefixText: "Name",
+                  prefixStyle: TextStyle(
+                      color: Colors.blue, fontWeight: FontWeight.w600),
+                  labelText: "Nama Lengkap",
+                  // hintText: "Nama lengkap",
+                  hintStyle: TextStyle(fontSize: 12),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+
                 onChanged: (value) {
                   setState(() {});
                 },
